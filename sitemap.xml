@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Update the host to your production site before publishing -->
+  <url>
+    <loc>https://downloaded.example.com/</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/explore.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/mixtape.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/music.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/videos.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/movies.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/news.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/admin.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/signin.html</loc>
+  </url>
+  <url>
+    <loc>https://downloaded.example.com/404.html</loc>
+  </url>
+</urlset>
