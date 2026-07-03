@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixtape - downloaded</title>
+    <meta name="description" content="Curated mixtapes, DJ sets, and vibe-based playlists for your next listening session." />
+    <meta property="og:title" content="Mixtape - downloaded" />
+    <meta property="og:description" content="Curated mixtapes, DJ sets, and vibe-based playlists for your next listening session." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="glass-nav">
+        <div class="nav-brand">
+          <a href="index.html"><span class="logo-mark">Downloaded</span></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu">
+        </button>
+        <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="mixtape.html" class="active">Mixtape</a>
+          <a href="music.html">Music</a>
+          <a href="videos.html">Videos</a>
+          <a href="movies.html">Movies</a>
+          <a href="news.html">News</a>
+        </nav>
+        <div class="nav-action">
+          <a class="button pill" href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+      <section class="page-hero">
+        <h1>Build your perfect vibe in one place.</h1>
+        <p>Discover curated playlists, save favorites, and create your next listening session with smart search and quick actions.</p>
+      </section>
+
+      <section class="media-controls search-section">
+        <div class="control-group">
+          <input type="search" class="input-field" placeholder="Search by title, mood, or artist..." aria-label="Search mixtapes" />
+          <button class="button primary" type="button">Search</button>
+        </div>
+        <div class="filter-options">
+          <select class="select-field" aria-label="Filter by mood">
+            <option>All Moods</option>
+            <option>Chill</option>
+            <option>Late Night</option>
+            <option>Workout</option>
+            <option>Summer</option>
+            <option>Afrobeats</option>
+          </select>
+          <select class="select-field" aria-label="Sort playlists">
+            <option>Popular</option>
+            <option>Newest</option>
+            <option>Most Downloaded</option>
+            <option>Favorites</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="top-charts-section">
+        <span class="section-label">Charts</span>
+        <h3>Global Mixtapes Charts</h3>
+        <div class="charts-controls">
+          <button class="chart-filter active" data-period="today">Today</button>
+          <button class="chart-filter" data-period="week">This Week</button>
+          <button class="chart-filter" data-period="month">This Month</button>
+          <button class="chart-filter" data-period="all">All Time</button>
+        </div>
+        <div class="charts-list">
+          <div class="chart-item">1. Swiririri - Kapeke</div>
+          <div class="chart-item">2. Afrobeat Essentials - Various Artists</div>
+          <div class="chart-item">3. Urban Echo - City Beats</div>
+          <div class="chart-item">4. Cosmic Journey - Star Sound</div>
+          <div class="chart-item">5. Chill Vibes - Smooth Grooves</div>
+          <div class="chart-item">6. Global Fusion - World Mix</div>
+          <div class="chart-item">7. Night Drive - Midnight Tunes</div>
+          <div class="chart-item">8. Summer Heat - Tropical Mix</div>
+          <div class="chart-item">9. Soulful Sundays - Cozy Mix</div>
+          <div class="chart-item">10. Party Starters - Dance Mix</div>
+        </div>
+      </section>
+
+
+      <section class="card-grid-section">
+        <span class="section-label">Featured mixes</span>
+        <h2>Hand-picked mixtapes for every mood</h2>
+        <p>Use the quick actions below to preview, favorite, download, or drop a mix into your playlist.</p>
+
+        <div class="mixtape-grid">
+          <article class="mixtape-card" data-detail-id="mix-summer-vibes">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--sunset"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Summer Vibes 2026</h3>
+              <p class="mixtape-meta">Mood: Summer • 18 tracks • 1h 05m</p>
+              <p class="mixtape-desc">Sun-soaked grooves, pop hooks, and tropical energy for the perfect weekend drive.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-late-night">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--ocean"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Late Night Sessions</h3>
+              <p class="mixtape-meta">Mood: Chill • 12 tracks • 52m</p>
+              <p class="mixtape-desc">Soft synths, chill beats, and deep basslines for a calm and cinematic evening.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-workout">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--fire"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Workout Pulse</h3>
+              <p class="mixtape-meta">Mood: Workout • 14 tracks • 58m</p>
+              <p class="mixtape-desc">High-energy drums, crisp drops, and a focus-heavy mix for training and movement.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-afrobeats">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--green"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Afrobeats Heat</h3>
+              <p class="mixtape-meta">Mood: Afrobeats • 16 tracks • 1h 12m</p>
+              <p class="mixtape-desc">A fresh blend of percussion, vocals, and crowd-ready hooks to keep the party alive.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-chill-hop">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--blue"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Chill Hop Essentials</h3>
+              <p class="mixtape-meta">Mood: Chill • 20 tracks • 1h 30m</p>
+              <p class="mixtape-desc">Laid-back beats, jazzy samples, and a smooth flow for studying or relaxing.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-soulful">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--pink"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Soulful Vibes</h3>
+              <p class="mixtape-meta">Mood: Soulful • 25 tracks • 2h 00m</p>
+              <p class="mixtape-desc">Rich, emotive melodies and heartfelt lyrics for deep listening.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article> 
+
+          <article class="mixtape-card" data-detail-id="mix-soulful">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--red"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Soulful Sundays</h3>
+              <p class="mixtape-meta">Mood: Soulful • 18 tracks • 1h 20m</p>
+              <p class="mixtape-desc">Warm vocals, smooth instrumentals, and a heartfelt vibe for a cozy day in.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-soulful">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--red"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Soulful Sundays</h3>
+              <p class="mixtape-meta">Mood: Soulful • 18 tracks • 1h 20m</p>
+              <p class="mixtape-desc">Warm vocals, smooth instrumentals, and a heartfelt vibe for a cozy day in.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="mixtape-card" data-detail-id="mix-global-beats">
+            <div class="mixtape-cover">
+              <div class="cover-image mixtape-cover--world"></div>
+            </div>
+            <div class="mixtape-info">
+              <h3>Global Beats</h3>
+              <p class="mixtape-meta">Mood: Eclectic • 25 tracks • 1h 50m</p>
+              <p class="mixtape-desc">A vibrant mix of world music, international hits, and cross-cultural collaborations.</p>
+              <div class="mixtape-actions">
+                <button class="button secondary small play-btn" type="button">▶ Play</button>
+                <button class="button secondary small download-btn" type="button">Download</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <nav class="pagination" aria-label="Browse pages">
+          <button class="page">Prev</button>
+          <button class="page active" aria-current="page">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <button class="page">4</button>
+          <span class="page ellipsis" aria-hidden="true">...</span>
+          <button class="page">Next</button>
+        </nav>
+      </section>
+
+      <section id="trending" class="trending-section">
+        <div>
+          <div class="trending-heading-row">
+            <h2>Top songs moving the charts</h2>
+          </div>
+
+          <div class="trending-grid">
+            <article class="trending-item" data-detail-id="trend-1">
+              <div class="track-cover" data-bg-image="track-1"></div>
+              <div class="track-details">
+                <div class="track-title">Swiririri (feat. Rickman Manrick)</div>
+                <div class="track-meta">Kapeke Â· 2:43</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-2">
+              <div class="track-cover" data-bg-image="track-2"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu</div>
+                <div class="track-meta">Kapeke Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-3">
+              <div class="track-cover" data-bg-image="track-3"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-4">
+              <div class="track-cover" data-bg-image="track-4"></div>
+              <div class="track-details">
+                <div class="track-title">Dogyina Style</div>
+                <div class="track-meta">Kapeke ft Trapex Boomin Â· 2:13</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-5">
+              <div class="track-cover" data-bg-image="track-5"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-6">
+              <div class="track-cover" data-bg-image="track-6"></div>
+              <div class="track-details">
+                <div class="track-title">Dogyina Style</div>
+                <div class="track-meta">Kapeke ft Trapex Boomin Â· 2:13</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-7">
+              <div class="track-cover" data-bg-image="track-7"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-8">
+              <div class="track-cover" data-bg-image="track-8"></div>
+              <div class="track-details">
+                <div class="track-title">Essence (feat. Wizkid)</div>
+                <div class="track-meta">Tems Â· 3:07</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-9">
+              <div class="track-cover" data-bg-image="track-9"></div>
+              <div class="track-details">
+                <div class="track-title">Ye</div>
+                <div class="track-meta">Burna Boy Â· 2:56</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-10">
+              <div class="track-cover" data-bg-image="track-10"></div>
+              <div class="track-details">
+                <div class="track-title">Overloaded</div>
+                <div class="track-meta">Asake Â· 2:44</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-11">
+              <div class="track-cover" data-bg-image="track-11"></div>
+              <div class="track-details">
+                <div class="track-title">Shaku Shaku</div>
+                <div class="track-meta">Olamide Â· 2:50</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-12">
+              <div class="track-cover" data-bg-image="track-12"></div>
+              <div class="track-details">
+                <div class="track-title">Skelewu</div>
+                <div class="track-meta">Davido Â· 3:15</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-13">
+              <div class="track-cover" data-bg-image="track-13"></div>
+              <div class="track-details">
+                <div class="track-title">Fia</div>
+                <div class="track-meta">Davido Â· 3:05</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+          </div>
+
+          <nav class="pagination" data-pagesize="10" aria-label="Trending pages">
+            <button class="page">Prev</button>
+            <button class="page active" aria-current="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <span class="page ellipsis" aria-hidden="true">...</span>
+            <button class="page">Next</button>
+          </nav>
+
+        </div>
+
+        <aside class="trending-sidebar">
+
+          <div class="sidebar-card artist-filter-section">
+        <h3>Popular Artist</h3>
+        <div class="artist-list">
+          <button type="button" class="button secondary small artist-link" data-artist="Naira Marley">Naira Marley</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Zlatan">Zlatan</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Kizz Daniel">Kizz Daniel</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Joeboy">Joeboy</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Adekunle Gold">Adekunle Gold</button>
+          <button type="button" class="button secondary small artist-link" data-artist="BNXN">BNXN</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Victony">Victony</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mayorkun">Mayorkun</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Simi">Simi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Yemi Alade">Yemi Alade</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Teni">Teni</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Spyro">Spyro</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Omah Lay">Omah Lay</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ruger">Ruger</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Johnny Drille">Johnny Drille</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Wande Coal">Wande Coal</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Niniola">Niniola</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Chike">Chike</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Judikay">Judikay</button>
+        </div>
+      </div>
+      
+          <div class="sidebar-card">
+            <div class="sidebar-card-header">
+              <h3>Trending Artists</h3>
+              <a class="button pill" href="explore.html">Explore</a>
+            </div>
+            <ul class="sidebar-list">
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-1"></span>
+                <div>
+                  <strong>Davido</strong>
+                  <span>1.2M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-2"></span>
+                <div>
+                  <strong>Wizkid</strong>
+                  <span>980K followers</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-4"></span>
+                <div>
+                  <strong>Fireboy DML</strong>
+                  <span>760K streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-5"></span>
+                <div>
+                  <strong>Tems</strong>
+                  <span>680K followers</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-3"></span>
+                <div>
+                  <strong>Rema</strong>
+                  <span>720K streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-6"></span>
+                <div>
+                  <strong>Olamide</strong>
+                  <span>650K followers</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card ad-promo-card">
+            <div class="sidebar-card-header">
+              <div>
+                <span class="ad-pill">Sponsored</span>
+                <h3>Trending Albums</h3>
+              </div>
+              <a class="button pill ad-cta" href="javascript:void(0)">Claim Offer</a>
+            </div>
+            <ul class="sidebar-list sidebar-ranking">
+              <li>
+                <span class="sidebar-rank">1</span>
+                <div>
+                  <strong>Sunset Sessions</strong>
+                  <span>1.8M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">2</span>
+                <div>
+                  <strong>Midnight Drive</strong>
+                  <span>1.5M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">3</span>
+                <div>
+                  <strong>Global Fusion</strong>
+                  <span>1.3M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">4</span>
+                <div>
+                  <strong>Urban Pulse</strong>
+                  <span>1.4M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">5</span>
+                <div>
+                  <strong>Global Vibes</strong>
+                  <span>1.1M streams</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card-grid-section">
+        <h2>Create a quick mixtape stack</h2>
+        <p>Save a custom set, add your favorite tracks, and keep your listening queue ready for later.</p>
+
+        <div class="grid cards-grid">
+          <article class="tile">
+            <div class="tile-image tile-image--midnight"></div>
+            <div class="tile-content">
+              <h3>Quick Save</h3>
+              <p>Save your current mix to your personal playlist with one tap.</p>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile-image tile-image--teal"></div>
+            <div class="tile-content">
+              <h3>Share Vibe</h3>
+              <p>Send your favorite mix to friends or post it across your channels.</p>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile-image tile-image--teal"></div>
+            <div class="tile-content">
+              <h3>Share Vibe</h3>
+              <p>Send your favorite mix to friends or post it across your channels.</p>
+               </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile-image tile-image--violet"></div>
+            <div class="tile-content">
+              <h3>Download Queue</h3>
+              <p>Keep track of the latest downloads you have collected from this page.</p>
+              </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="media-grid-section">
+        <h2>Newly Released Movies</h2>
+        <div class="movie-grid">
+          <article class="movie-item media-item" data-detail-id="emerald-dreams">
+            <div class="movie-poster" role="img" aria-label="Poster: Emerald Dreams"></div>
+            <div class="movie-details">
+              <h3>Emerald Dreams</h3>
+              <p class="genre">Drama</p>
+              <div class="rating">4.2</div>
+              <p class="duration">2h 05m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Emerald Dreams" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Emerald Dreams" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Emerald Dreams" data-movie="emerald-dreams">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-item media-item" data-detail-id="silent-mystery">
+            <div class="movie-poster" role="img" aria-label="Poster: Silent Mystery"></div>
+            <div class="movie-details">
+              <h3>Silent Mystery</h3>
+              <p class="genre">Thriller</p>
+              <div class="rating">4.7</div>
+              <p class="duration">1h 52m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Silent Mystery" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Silent Mystery" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Silent Mystery" data-movie="silent-mystery">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-item media-item" data-detail-id="action-blaze">
+            <div class="movie-poster" role="img" aria-label="Poster: Action Blaze"></div>
+            <div class="movie-details">
+              <h3>Action Blaze</h3>
+              <p class="genre">Action</p>
+              <div class="rating">4.4</div>
+              <p class="duration">2h 10m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Action Blaze" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Action Blaze" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Action Blaze" data-movie="action-blaze">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-item media-item" data-detail-id="cosmic-journey">
+            <div class="movie-poster" role="img" aria-label="Poster: Cosmic Journey"></div>
+            <div class="movie-details">
+              <h3>Cosmic Journey</h3>
+              <p class="genre">Sci-Fi</p>
+              <div class="rating">4.8</div>
+              <p class="duration">2h 25m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Cosmic Journey" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Cosmic Journey" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Cosmic Journey" data-movie="cosmic-journey">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-item media-item" data-detail-id="cosmic-journey">
+            <div class="movie-poster" role="img" aria-label="Poster: Cosmic Journey"></div>
+            <div class="movie-details">
+              <h3>Cosmic Journey</h3>
+              <p class="genre">Sci-Fi</p>
+              <div class="rating">4.8</div>
+              <p class="duration">2h 25m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Cosmic Journey" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Cosmic Journey" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Cosmic Journey" data-movie="cosmic-journey">Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="movie-item media-item" data-detail-id="cosmic-journey">
+            <div class="movie-poster" role="img" aria-label="Poster: Cosmic Journey"></div>
+            <div class="movie-details">
+              <h3>Cosmic Journey</h3>
+              <p class="genre">Sci-Fi</p>
+              <div class="rating">4.8</div>
+              <p class="duration">2h 25m</p>
+              <div class="media-actions">
+                <button class="button secondary small play-btn" aria-label="Play trailer for Cosmic Journey" data-url="#">Watch Trailer</button>
+                <button class="button secondary small play-btn" aria-label="Watch Cosmic Journey" data-url="#">Watch Online</button>
+                <button class="button secondary small download-btn" aria-label="Download Cosmic Journey" data-movie="cosmic-journey">Download</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <nav class="pagination" data-pagesize="6" aria-label="Browse pages">
+          <button class="page">Prev</button>
+          <button class="page active" aria-current="page">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <button class="page">4</button>
+          <span class="page ellipsis" aria-hidden="true">...</span>
+          <button class="page">Next</button>
+        </nav>
+      </section>
+
+
+      <section class="artist-filter-section">
+        <span class="section-label">Artists</span>
+        <h2>Browse the biggest Nigerian and gospel artists</h2>
+        <div class="artist-list">
+          <button type="button" class="button secondary small artist-link" data-artist="Davido">Davido</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Wizkid">Wizkid</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Burna Boy">Burna Boy</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Olamide">Olamide</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Tiwa Savage">Tiwa Savage</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Asake">Asake</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Seyi Vibez">Seyi Vibez</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Bella Shmurda">Bella Shmurda</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Portable">Portable</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Jeriq">Jeriq</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Fireboy DML">Fireboy DML</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Rema">Rema</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ayra Starr">Ayra Starr</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Patoranking">Patoranking</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Naira Marley">Naira Marley</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Zlatan">Zlatan</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Kizz Daniel">Kizz Daniel</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Joeboy">Joeboy</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Adekunle Gold">Adekunle Gold</button>
+          <button type="button" class="button secondary small artist-link" data-artist="BNXN">BNXN</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Victony">Victony</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mayorkun">Mayorkun</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Simi">Simi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Yemi Alade">Yemi Alade</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Teni">Teni</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Flavour">Flavour</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mr Eazi">Mr Eazi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Phyno">Phyno</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ice Prince">Ice Prince</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ycee">Ycee</button>
+          <button type="button" class="button secondary small artist-link" data-artist="CDQ">CDQ</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Peruzzi">Peruzzi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Blaqbonez">Blaqbonez</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Reekado Banks">Reekado Banks</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Spyro">Spyro</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Omah Lay">Omah Lay</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ruger">Ruger</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Johnny Drille">Johnny Drille</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Wande Coal">Wande Coal</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Niniola">Niniola</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Chike">Chike</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Timaya">Timaya</button>
+          <button type="button" class="button secondary small artist-link" data-artist="2Baba">2Baba</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Falz">Falz</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Kcee">Kcee</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Duncan Mighty">Duncan Mighty</button>
+          <button type="button" class="button secondary small artist-link" data-artist="D'banj">D'banj</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Praiz">Praiz</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Terry Apala">Terry Apala</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mercy Chinwo">Mercy Chinwo</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Sinach">Sinach</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Nathaniel Bassey">Nathaniel Bassey</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Tim Godfrey">Tim Godfrey</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ada Ehi">Ada Ehi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Frank Edwards">Frank Edwards</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Eben">Eben</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Moses Bliss">Moses Bliss</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Judikay">Judikay</button>
+        </div>
+        <div class="artist-filter-info">
+          <p>Click any artist name to discover related playlists, videos, and tracks throughout the site.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-mark">MediaHub</span>
+              <div>
+                <p class="footer-brand-title">Your premium media destination</p>
+              </div>
+            </div>
+            <p class="footer-brand-copy">Discover music, movies, and culture with a modern streaming experience designed for discovery, playlists, and rapid access.</p>
+            <div class="footer-contact">
+              <a href="mailto:hello@downloaded.example.com">hello@downloaded.example.com</a>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+
+          <div class="footer-block">
+            <h3>Quick links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="mixtape.html">Mixtape</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Categories</h3>
+            <ul class="footer-list">
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="explore.html">Featured</a></li>
+              <li><a href="mixtape.html">Collections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Social</h3>
+            <ul class="footer-list">
+              <li><a href="https://twitter.com/downloaded" target="_blank" rel="noopener">Twitter</a></li>
+              <li><a href="https://instagram.com/downloaded" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/@downloaded" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+
+          </div>
+
+        <div class="footer-bottom">
+          <p>Â© 2026 downloaded. All rights reserved.</p>
+          <div class="footer-policy-links">
+            <a href="javascript:void(0)">Privacy</a>
+            <a href="javascript:void(0)">Terms</a>
+            <a href="javascript:void(0)">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - downloaded</title>
+    <meta name="description" content="downloaded admin dashboard for managing content." />
+    <meta property="og:title" content="Admin Dashboard - downloaded" />
+    <meta property="og:description" content="downloaded admin dashboard for managing content." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="glass-nav">
+        <div class="nav-brand">
+          <a href="index.html"><span class="logo-mark">Downloaded</span></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="mixtape.html">Mixtape</a>
+          <a href="music.html">Music</a>
+          <a href="videos.html">Videos</a>
+          <a href="movies.html">Movies</a>
+          <a href="news.html">News</a>
+        </nav>
+        <div class="nav-action">
+          <a class="button pill" href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+      <section class="page-hero">
+        <h1 id="admin-welcome">Admin Dashboard</h1>
+        <p>Manage content, users, and settings for downloaded.</p>
+        <p id="admin-status" class="admin-status-text">Signed in as admin.</p>
+      </section>
+
+      <div id="admin-login-prompt" class="auth-required-message">
+        <h2>Admin Sign In</h2>
+        <p>You need an admin account to access the dashboard.</p>
+
+        <div class="admin-login-card">
+          <label class="field-label" for="admin-email">Email address</label>
+          <input id="admin-email" class="input-field" type="email" placeholder="admin@downloaded.com" />
+
+          <label class="field-label" for="admin-password">Password</label>
+          <input id="admin-password" class="input-field" type="password" placeholder="Enter password" />
+
+          <button id="admin-signin-button" class="button primary" type="button">Sign In</button>
+          <p id="admin-auth-message" class="message-box hidden"></p>
+        </div>
+
+        <p class="helper-copy">Demo credentials: admin@downloaded.com / Media2026!</p>
+      </div>
+
+      <section id="admin-dashboard-content" class="admin-dashboard hidden">
+        <div class="admin-stats">
+          <div class="stat-card">
+            <div class="stat-icon"></div>
+            <div class="stat-content">
+              <h3>Total Tracks</h3>
+              <p class="stat-value">1,247</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Videos</h3>
+              <p class="stat-value">382</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Movies</h3>
+              <p class="stat-value">156</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-content">
+              <h3>Articles</h3>
+              <p class="stat-value">89</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-quick-actions">
+          <h2>Quick Actions</h2>
+          <div class="action-buttons">
+            <a href="upload.html" class="button primary">Upload Content</a>
+            <a href="index.html" class="button secondary">View Site</a>
+            <a href="explore.html" class="button secondary">Browse Content</a>
+            <button class="button secondary" id="logout-btn" type="button">Sign Out</button>
+          </div>
+        </div>
+
+        <section class="admin-tools-panel">
+          <h2>Admin Tools</h2>
+          <div class="admin-tools-grid">
+            <article class="admin-tool-card">
+              <h3>Manage Users</h3>
+              <p>Review access, roles, and account activity from one place.</p>
+            </article>
+            <article class="admin-tool-card">
+              <h3>Content Moderation</h3>
+              <p>Approve uploads, flag outdated items, and keep the library fresh.</p>
+            </article>
+            <article class="admin-tool-card">
+              <h3>Site Settings</h3>
+              <p>Control featured content, announcements, and homepage highlights.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="admin-content-table">
+          <h2>Recent Uploads</h2>
+          <div id="recent-uploads" class="uploads-list">
+            <p class="uploads-empty">No uploads yet. <a href="upload.html">Create one now!</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-mark">Downloaded</span>
+              <div>
+                <p class="footer-brand-title">Your premium media destination</p>
+              </div>
+            </div>
+            <p class="footer-brand-copy">Discover music, movies, and culture with a modern streaming experience designed for discovery, playlists, and rapid access.</p>
+          </div>
+
+          <div class="footer-block">
+            <h3>Quick links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="admin.html">Admin</a></li>
+              <li><a href="upload.html">Upload</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Categories</h3>
+            <ul class="footer-list">
+              <li><a href="music.html">Music</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Social</h3>
+            <ul class="footer-list">
+              <li><a href="https://twitter.com/downloaded" target="_blank" rel="noopener">Twitter</a></li>
+              <li><a href="https://instagram.com/downloaded" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/@downloaded" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Â© 2026 downloaded. All rights reserved.</p>
+          <div class="footer-policy-links">
+            <a href="javascript:void(0)">Privacy</a>
+            <a href="javascript:void(0)">Terms</a>
+            <a href="javascript:void(0)">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
+
+
