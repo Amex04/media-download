@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - downloaded</title>
+    <meta name="description" content="downloaded is a premium entertainment hub for music, videos, movies and news." />
+    <meta property="og:title" content="downloaded" />
+    <meta property="og:description" content="downloaded is a premium entertainment hub for music, videos, movies and news." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="glass-nav">
+        <div class="nav-brand">
+          <a href="index.html"><span class="logo-mark">Downloaded</span></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu">
+       
+        </button>
+        <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="mixtape.html">Mixtape</a>
+          <a href="music.html">Music</a>
+          <a href="videos.html">Videos</a>
+          <a href="movies.html">Movies</a>
+          <a href="news.html" class="active">News</a>
+        </nav>
+        <div class="nav-action">
+          <a class="button pill" href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+      <section class="page-hero">
+        <h1>News & Articles</h1>
+        <p>Read the latest entertainment news, reviews, and culture coverage.</p>
+      </section>
+
+      <section class="media-controls">
+        <div class="control-group">
+          <input type="text" placeholder="Search articles, authors, topics..." class="input-field" />
+          <button class="button primary">Search</button>
+        </div>
+        <div class="filter-options">
+          <select id="category-filter" class="select-field" aria-label="Filter by category">
+            <option>All Categories</option>
+            <option>Music</option>
+            <option>Movies</option>
+            <option>Entertainment</option>
+            <option>Culture</option>
+            <option>Reviews</option>
+          </select>
+          <select id="sort-filter" class="select-field" aria-label="Sort articles">
+            <option>Newest First</option>
+            <option>Most Popular</option>
+            <option>Top Rated</option>
+            <option>Trending</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="top-charts-section">
+        <span class="section-label">Charts</span>
+        <h3>Top Stories Today</h3>
+        <div class="charts-controls">
+          <button class="chart-filter active" data-period="today">Today</button>
+          <button class="chart-filter" data-period="week">This Week</button>
+          <button class="chart-filter" data-period="month">This Month</button>
+        </div>
+        <div class="charts-list">
+          <div class="chart-item">1. The Comeback of Indie Pop</div>
+          <div class="chart-item">2. Streaming Trends for 2026</div>
+          <div class="chart-item">3. Behind the Scenes Exclusives</div>
+          <div class="chart-item">4. Artist Interviews & Insights</div>
+          <div class="chart-item">5. Album Reviews & Ratings</div>
+          <div class="chart-item">6. Festival Coverage</div>
+          <div class="chart-item">7. Technology & Innovation</div>
+          <div class="chart-item">8. Cultural Commentary</div>
+          <div class="chart-item">9. Movie & TV Highlights</div>
+          <div class="chart-item">10. Viral Moments & Memes</div>
+          <div class="chart-item">11. Music Video Premieres</div>
+          <div class="chart-item">12. Emerging Artist Spotlights</div> 
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2>Top News</h2>
+        <article class="article-card featured" data-detail-id="news-5">
+          <div class="article-image"></div>
+          <div class="article-content">
+            <span class="article-category">Music</span>
+            <h3>Artist collaborations trending now</h3>
+            <p>Epic team-ups breaking records and creating buzz across the industry.</p>
+            <div class="article-meta">
+              <span>By Music Analyst</span>
+              <span>June 1, 2026</span>
+              <span>5 min read</span>
+            </div>
+            <a href="javascript:void(0)" class="button secondary">Read Article</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="article-grid-section">
+        <h2>Trending Stories</h2>
+        <div class="article-grid">
+          <article class="article-card" data-detail-id="news-1">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Music</span>
+              <h3>New album release roundup</h3>
+              <p>Check out this week's biggest records and what makes them essential listening.</p>
+              <div class="article-meta">
+                <span>By Music Editor</span>
+                <span>June 5, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-2">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Videos</span>
+              <h3>Video premieres to watch</h3>
+              <p>From viral clips to cinematic trailers, these premieres are making waves.</p>
+              <div class="article-meta">
+                <span>By Video Correspondent</span>
+                <span>June 4, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-3">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Movies</span>
+              <h3>Movie picks for the weekend</h3>
+              <p>Handpicked film recommendations for your next watch party.</p>
+              <div class="article-meta">
+                <span>By Film Critic</span>
+                <span>June 3, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-4">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Events</span>
+              <h3>Festival highlights and recaps</h3>
+              <p>Experience the best moments and exclusive performances from major music festivals.</p>
+              <div class="article-meta">
+                <span>By Events Reporter</span>
+                <span>June 2, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-5">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Music</span>
+              <h3>Artist collaborations trending now</h3>
+              <p>Epic team-ups breaking records and creating buzz across the industry.</p>
+              <div class="article-meta">
+                <span>By Music Analyst</span>
+                <span>June 1, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-6">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Culture</span>
+              <h3>Behind the scenes production stories</h3>
+              <p>Exclusive interviews and insights into how your favorite content is made.</p>
+              <div class="article-meta">
+                <span>By Production Correspondent</span>
+                <span>May 31, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-7">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Technology</span>
+              <h3>Streaming platform updates</h3>
+              <p>Latest features, price changes, and new shows coming to your favorite services.</p>
+              <div class="article-meta">
+                <span>By Tech Reporter</span>
+                <span>May 30, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-8">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Analysis</span>
+              <h3>Year in review: Top trends 2026</h3>
+              <p>Analyzing the music, movies, and moments that defined the year so far.</p>
+              <div class="article-meta">
+                <span>By Chief Entertainment Correspondent</span>
+                <span>May 29, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-9">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Music</span>
+              <h3>Emerging producers redefining sound</h3>
+              <p>Fresh talent revolutionizing music production with innovative techniques.</p>
+              <div class="article-meta">
+                <span>By Sound Design Editor</span>
+                <span>May 28, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-10">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Movies</span>
+              <h3>Documentary highlights of June</h3>
+              <p>Must-watch documentaries exploring music, culture, and entertainment.</p>
+              <div class="article-meta">
+                <span>By Documentary Critic</span>
+                <span>May 27, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-11">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Technology</span>
+              <h3>Music streaming records broken</h3>
+              <p>Historic milestones as artists continue to break streaming records.</p>
+              <div class="article-meta">
+                <span>By Industry Analyst</span>
+                <span>May 26, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-12">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Events</span>
+              <h3>Concert tour announcements</h3>
+              <p>Exciting tour dates and venue announcements from major artists.</p>
+              <div class="article-meta">
+                <span>By Tour Reporter</span>
+                <span>May 25, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-13">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Culture</span>
+              <h3>Podcast boom continues strong</h3>
+              <p>Audio content revolution as podcasts reach new audiences.</p>
+              <div class="article-meta">
+                <span>By Audio Content Editor</span>
+                <span>May 24, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card" data-detail-id="news-14">
+            <div class="article-image"></div>
+            <div class="article-content">
+              <span class="article-category">Music</span>
+              <h3>Music awards and recognition</h3>
+              <p>Celebrating excellence in music with industry awards.</p>
+              <div class="article-meta">
+                <span>By Awards Correspondent</span>
+                <span>May 23, 2026</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+          <nav class="pagination" data-pagesize="8" aria-label="Article pages">
+            <button class="page">Prev</button>
+            <button class="page active" aria-current="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <span class="page ellipsis" aria-hidden="true">â€¦</span>
+            <button class="page">Next</button>
+          </nav>
+      </section>
+
+      <section class="newsletter-cta">
+        <div class="newsletter-panel">
+          <span class="section-label">Newsletter</span>
+          <h2>Subscribe for exclusive drops and updates</h2>
+          <p>Join our newsletter to receive weekly curated playlists, early release alerts, and insider media news from downloaded.</p>
+          <div class="newsletter-features">
+            <div class="newsletter-feature">
+              <strong>Weekly collections</strong>
+              <span>Fresh playlists and top tracks delivered every Monday.</span>
+            </div>
+            <div class="newsletter-feature">
+              <strong>Early access</strong>
+              <span>Be the first to know about new releases and special premieres.</span>
+            </div>
+            <div class="newsletter-feature">
+              <strong>Insider news</strong>
+              <span>Get hot entertainment stories, artist updates, and trending culture coverage.</span>
+            </div>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="footer-email">Email address</label>
+            <input id="footer-email" type="email" placeholder="Enter your email" required />
+            <button class="button secondary" type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-feedback" aria-live="polite"></p>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-mark">MediaHub</span>
+              <div>
+                <p class="footer-brand-title">Your premium media destination</p>
+              </div>
+            </div>
+            <p class="footer-brand-copy">Discover music, movies, and culture with a modern streaming experience designed for discovery, playlists, and rapid access.</p>
+            <div class="footer-contact">
+              <a href="mailto:hello@downloaded.example.com">hello@downloaded.example.com</a>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+
+          <div class="footer-block">
+            <h3>Quick links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="mixtape.html">Mixtape</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Categories</h3>
+            <ul class="footer-list">
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="explore.html">Featured</a></li>
+              <li><a href="mixtape.html">Collections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Social</h3>
+            <ul class="footer-list">
+              <li><a href="https://twitter.com/downloaded" target="_blank" rel="noopener">Twitter</a></li>
+              <li><a href="https://instagram.com/downloaded" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/@downloaded" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+
+          </div>
+
+        <div class="footer-bottom">
+          <p>Â© 2026 downloaded. All rights reserved.</p>
+          <div class="footer-policy-links">
+            <a href="javascript:void(0)">Privacy</a>
+            <a href="javascript:void(0)">Terms</a>
+            <a href="javascript:void(0)">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+        <script src="scripts.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
