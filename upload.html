@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Content - downloaded</title>
+    <meta name="description" content="Upload music, videos, movies, news, and mixtapes to downloaded." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="glass-nav">
+        <div class="nav-brand">
+          <a href="index.html"><span class="logo-mark">Downloaded</span></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="mixtape.html">Mixtape</a>
+          <a href="music.html">Music</a>
+          <a href="videos.html">Videos</a>
+          <a href="movies.html">Movies</a>
+          <a href="news.html">News</a>
+        </nav>
+        <div class="nav-action">
+          <a class="button pill" href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+      <section class="page-hero">
+        <h1>Upload Content</h1>
+        <p>Publish music, videos, movies, news, mixtapes, and image posts from one admin workspace.</p>
+      </section>
+
+      <div id="upload-auth-prompt" class="auth-required-message">
+        <h2>Admin Access Required</h2>
+        <p>Sign in as an administrator to create uploads.</p>
+        <a href="signin.html" class="button primary">Go to Sign In</a>
+      </div>
+
+      <section id="upload-section" class="upload-page hidden">
+        <div class="upload-grid">
+          <article class="upload-card">
+            <h2>Music Upload</h2>
+            <form id="music-upload-form" class="upload-form">
+              <label class="field-label" for="music-title">Track title</label>
+              <input id="music-title" name="music-title" class="input-field" type="text" placeholder="Track title" required />
+              <label class="field-label" for="music-artist">Artist</label>
+              <input id="music-artist" name="music-artist" class="input-field" type="text" placeholder="Artist name" />
+              <label class="field-label" for="music-description">Description</label>
+              <textarea id="music-description" name="music-description" class="input-field" rows="3" placeholder="Add a short description"></textarea>
+              <button class="button primary" type="submit">Publish Music</button>
+            </form>
+          </article>
+
+          <article class="upload-card">
+            <h2>Video Upload</h2>
+            <form id="video-upload-form" class="upload-form">
+              <label class="field-label" for="video-title">Video title</label>
+              <input id="video-title" name="video-title" class="input-field" type="text" placeholder="Video title" required />
+              <label class="field-label" for="video-category">Category</label>
+              <input id="video-category" name="video-category" class="input-field" type="text" placeholder="Trending / Interviews / Live" />
+              <label class="field-label" for="video-description">Description</label>
+              <textarea id="video-description" name="video-description" class="input-field" rows="3" placeholder="Describe the video"></textarea>
+              <button class="button primary" type="submit">Publish Video</button>
+            </form>
+          </article>
+
+          <article class="upload-card">
+            <h2>Movie Upload</h2>
+            <form id="movie-upload-form" class="upload-form">
+              <label class="field-label" for="movie-title">Movie title</label>
+              <input id="movie-title" name="movie-title" class="input-field" type="text" placeholder="Movie title" required />
+              <label class="field-label" for="movie-year">Year</label>
+              <input id="movie-year" name="movie-year" class="input-field" type="text" placeholder="2026" />
+              <label class="field-label" for="movie-genre">Genre</label>
+              <input id="movie-genre" name="movie-genre" class="input-field" type="text" placeholder="Drama / Action" />
+              <button class="button primary" type="submit">Publish Movie</button>
+            </form>
+          </article>
+
+          <article class="upload-card">
+            <h2>News Upload</h2>
+            <form id="news-upload-form" class="upload-form">
+              <label class="field-label" for="news-title">Headline</label>
+              <input id="news-title" name="news-title" class="input-field" type="text" placeholder="Headline" required />
+              <label class="field-label" for="news-source">Source</label>
+              <input id="news-source" name="news-source" class="input-field" type="text" placeholder="Source name" />
+              <label class="field-label" for="news-summary">Summary</label>
+              <textarea id="news-summary" name="news-summary" class="input-field" rows="3" placeholder="Brief summary"></textarea>
+              <button class="button primary" type="submit">Publish News</button>
+            </form>
+          </article>
+
+          <article class="upload-card">
+            <h2>Mixtape Upload</h2>
+            <form id="mixtape-upload-form" class="upload-form">
+              <label class="field-label" for="mixtape-title">Mixtape title</label>
+              <input id="mixtape-title" name="mixtape-title" class="input-field" type="text" placeholder="Mixtape title" required />
+              <label class="field-label" for="mixtape-creator">Creator</label>
+              <input id="mixtape-creator" name="mixtape-creator" class="input-field" type="text" placeholder="DJ / Artist" />
+              <label class="field-label" for="mixtape-notes">Notes</label>
+              <textarea id="mixtape-notes" name="mixtape-notes" class="input-field" rows="3" placeholder="Add a short note"></textarea>
+              <button class="button primary" type="submit">Publish Mixtape</button>
+            </form>
+          </article>
+
+          <article class="upload-card">
+            <h2>Image Upload</h2>
+            <form id="image-upload-form" class="upload-form">
+              <label class="field-label" for="image-title">Image title</label>
+              <input id="image-title" name="image-title" class="input-field" type="text" placeholder="Image title" required />
+              <label class="field-label" for="image-caption">Caption</label>
+              <input id="image-caption" name="image-caption" class="input-field" type="text" placeholder="Caption" />
+              <label class="field-label" for="image-tag">Tag</label>
+              <input id="image-tag" name="image-tag" class="input-field" type="text" placeholder="Featured / Gallery" />
+              <button class="button primary" type="submit">Publish Image</button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section id="uploaded-content-section" class="upload-history-panel hidden">
+        <h2>Recent Uploads</h2>
+        <div id="uploaded-items" class="uploaded-grid"></div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-mark">Downloaded</span>
+              <div>
+                <p class="footer-brand-title">Your premium media destination</p>
+              </div>
+            </div>
+            <p class="footer-brand-copy">Discover music, movies, and culture with a modern streaming experience designed for discovery, playlists, and rapid access.</p>
+          </div>
+
+          <div class="footer-block">
+            <h3>Quick links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="admin.html">Admin</a></li>
+              <li><a href="upload.html">Upload</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Categories</h3>
+            <ul class="footer-list">
+              <li><a href="music.html">Music</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Social</h3>
+            <ul class="footer-list">
+              <li><a href="https://twitter.com/downloaded" target="_blank" rel="noopener">Twitter</a></li>
+              <li><a href="https://instagram.com/downloaded" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/@downloaded" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 downloaded. All rights reserved.</p>
+          <div class="footer-policy-links">
+            <a href="javascript:void(0)">Privacy</a>
+            <a href="javascript:void(0)">Terms</a>
+            <a href="javascript:void(0)">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

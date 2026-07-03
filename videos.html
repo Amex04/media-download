@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos - downloaded</title>
+    <meta name="description" content="downloaded is a premium entertainment hub for music, videos, movies and news." />
+    <meta property="og:title" content="downloaded" />
+    <meta property="og:description" content="downloaded is a premium entertainment hub for music, videos, movies and news." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="glass-nav">
+        <div class="nav-brand">
+          <a href="index.html"><span class="logo-mark">Downloaded</span></a>
+        </div>
+
+        <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="mixtape.html">Mixtape</a>
+          <a href="music.html">Music</a>
+          <a href="videos.html" class="active">Videos</a>
+          <a href="movies.html">Movies</a>
+          <a href="news.html">News</a>
+        </nav>
+        <div class="nav-action">
+          <a class="button pill" href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+      <section class="page-hero">
+        <h1>Video Hub</h1>
+        <p>Watch, share, and download trending video content.</p>
+      </section>
+
+      <section class="media-controls">
+        <div class="control-group">
+          <input type="text" placeholder="Search videos, creators, channels..." class="input-field" />
+          <button class="button primary">Search</button>
+        </div>
+        <div class="filter-options">
+          <select class="select-field" aria-label="Filter by category">
+            <option>All Categories</option>
+            <option>Music Videos</option>
+            <option>Tutorials</option>
+            <option>Behind the Scenes</option>
+            <option>Live Performances</option>
+            <option>Documentaries</option>
+          </select>
+          <select class="select-field" aria-label="Sort videos">
+            <option>Trending Now</option>
+            <option>Most Viewed</option>
+            <option>Newest First</option>
+            <option>Top Rated</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="top-charts-section">
+        <span class="section-label">Charts</span>
+        <h3>Trending Videos</h3>
+        <div class="charts-controls">
+          <button class="chart-filter active" data-period="today">Today</button>
+          <button class="chart-filter" data-period="week">This Week</button>
+          <button class="chart-filter" data-period="month">This Month</button>
+        </div>
+        <div class="charts-list">
+          <div class="chart-item">1. City Lights - Aero Films</div>
+          <div class="chart-item">2. Night Drive - Pulse Studios</div>
+          <div class="chart-item">3. Urban Vibes - Digital Box</div>
+          <div class="chart-item">4. Skyline Views - Nova Productions</div>
+          <div class="chart-item">5. Neon Nights - Pixel Studios</div>
+          <div class="chart-item">6. Ocean Waves - Crystal Films</div>
+          <div class="chart-item">7. Desert Mirage - Golden Frame</div>
+          <div class="chart-item">8. Forest Dreams - Nature Docs</div>
+          <div class="chart-item">9. Cityscape - Urban Lens</div>
+          <div class="chart-item">10. Mountain High - Summit Films</div>
+          <div class="chart-item">11. Festival Highlights - Live Recordings</div>
+          <div class="chart-item">12. Tech Innovations - Future Vision</div>
+        </div>
+      </section>
+
+      <section class="media-grid-section">
+        <h2>Trending Music Videos</h2>
+        <p class="section-description">Explore the hottest music videos from top artists and emerging talents.</p>
+        <div class="media-grid">
+          <article class="media-item video-item" data-artist="Aero Films">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">12:04</div>
+            <div class="media-details">
+              <h3>City Lights</h3>
+              <p class="artist">Aero Films</p>
+              <p class="duration">9.2M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Pulse Studios">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">9:22</div>
+            <div class="media-details">
+              <h3>Night Drive</h3>
+              <p class="artist">Pulse Studios</p>
+              <p class="duration">5.1M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Nova Studio">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">15:36</div>
+            <div class="media-details">
+              <h3>Behind the Scenes</h3>
+              <p class="artist">Nova Studio</p>
+              <p class="duration">3.8M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Festival Recordings">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">8:45</div>
+            <div class="media-details">
+              <h3>Live Performance</h3>
+              <p class="artist">Festival Recordings</p>
+              <p class="duration">2.4M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Festival Recordings">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">8:45</div>
+            <div class="media-details">
+              <h3>Live Performance</h3>
+              <p class="artist">Festival Recordings</p>
+              <p class="duration">2.4M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+        </div>
+          <nav class="pagination" data-pagesize="15" aria-label="Trending pages">
+            <button class="page">Prev</button>
+            <button class="page active" aria-current="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <span class="page ellipsis" aria-hidden="true">...</span>
+            <button class="page">Next</button>
+          </nav>
+      </section>
+
+      <section class="media-grid-section">
+        <h2>New Uploads</h2>
+        <div class="media-grid">
+          <article class="media-item video-item" data-artist="Creative Films">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">11:20</div>
+            <div class="media-details">
+              <h3>Documentary Clip</h3>
+              <p class="artist">Creative Films</p>
+              <p class="duration">420K views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Davido">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">4:27</div>
+            <div class="media-details">
+              <h3>Aye</h3>
+              <p class="artist">Davido</p>
+              <p class="duration">1.2M views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Visual Arts Co">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">7:15</div>
+            <div class="media-details">
+              <h3>Music Video</h3>
+              <p class="artist">Visual Arts Co</p>
+              <p class="duration">310K views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Tech Academy">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">13:42</div>
+            <div class="media-details">
+              <h3>Tutorial: Production</h3>
+              <p class="artist">Tech Academy</p>
+              <p class="duration">180K views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="media-item video-item" data-artist="Media Network">
+            <div class="media-thumbnail"></div>
+            <div class="video-badge">6:30</div>
+            <div class="media-details">
+              <h3>Artist Interview</h3>
+              <p class="artist">Media Network</p>
+              <p class="duration">95K views</p>
+              <div class="media-actions">
+                <button class="button secondary small">Watch</button>
+                <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+              </div>
+            </div>
+          </article>
+        </div>
+          <nav class="pagination" data-pagesize="15" aria-label="Trending pages">
+            <button class="page">Prev</button>
+            <button class="page active" aria-current="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <span class="page ellipsis" aria-hidden="true">...</span>
+            <button class="page">Next</button>
+          </nav>
+      </section>
+
+      <section id="trending" class="trending-section">
+        <div>
+          <div class="trending-heading-row">
+            <h2>Top songs moving the charts</h2>
+          </div>
+
+          <div class="trending-grid">
+            <article class="trending-item" data-detail-id="trend-1">
+              <div class="track-cover" data-bg-image="track-1"></div>
+              <div class="track-details">
+                <div class="track-title">Swiririri (feat. Rickman Manrick)</div>
+                <div class="track-meta">Kapeke Â· 2:43</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-2">
+              <div class="track-cover" data-bg-image="track-2"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu</div>
+                <div class="track-meta">Kapeke Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-3">
+              <div class="track-cover" data-bg-image="track-3"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-4">
+              <div class="track-cover" data-bg-image="track-4"></div>
+              <div class="track-details">
+                <div class="track-title">Dogyina Style</div>
+                <div class="track-meta">Kapeke ft Trapex Boomin Â· 2:13</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-5">
+              <div class="track-cover" data-bg-image="track-5"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-6">
+              <div class="track-cover" data-bg-image="track-6"></div>
+              <div class="track-details">
+                <div class="track-title">Dogyina Style</div>
+                <div class="track-meta">Kapeke ft Trapex Boomin Â· 2:13</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-7">
+              <div class="track-cover" data-bg-image="track-7"></div>
+              <div class="track-details">
+                <div class="track-title">Shuu Remix</div>
+                <div class="track-meta">Kapeke ft Fik Fameica Â· 2:33</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-8">
+              <div class="track-cover" data-bg-image="track-8"></div>
+              <div class="track-details">
+                <div class="track-title">Essence (feat. Wizkid)</div>
+                <div class="track-meta">Tems Â· 3:07</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-9">
+              <div class="track-cover" data-bg-image="track-9"></div>
+              <div class="track-details">
+                <div class="track-title">Ye</div>
+                <div class="track-meta">Burna Boy Â· 2:56</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-10">
+              <div class="track-cover" data-bg-image="track-10"></div>
+              <div class="track-details">
+                <div class="track-title">Overloaded</div>
+                <div class="track-meta">Asake Â· 2:44</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-11">
+              <div class="track-cover" data-bg-image="track-11"></div>
+              <div class="track-details">
+                <div class="track-title">Shaku Shaku</div>
+                <div class="track-meta">Olamide Â· 2:50</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-12">
+              <div class="track-cover" data-bg-image="track-12"></div>
+              <div class="track-details">
+                <div class="track-title">Skelewu</div>
+                <div class="track-meta">Davido Â· 3:15</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+            <article class="trending-item" data-detail-id="trend-13">
+              <div class="track-cover" data-bg-image="track-13"></div>
+              <div class="track-details">
+                <div class="track-title">Fia</div>
+                <div class="track-meta">Davido Â· 3:05</div>
+              </div>
+              <button class="button secondary small"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="download-icon"><path d="M5 13v2h14v-2H5zm7-9l-5 5h3v4h4v-4h3l-5-5z" fill="currentColor"/></svg>Download</button>
+            </article>
+          </div>
+
+          <nav class="pagination" data-pagesize="10" aria-label="Trending pages">
+            <button class="page">Prev</button>
+            <button class="page active" aria-current="page">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <span class="page ellipsis" aria-hidden="true">...</span>
+            <button class="page">Next</button>
+          </nav>
+
+        </div>
+
+        <aside class="trending-sidebar">
+          <div class="sidebar-card">
+            <div class="sidebar-card-header">
+              <h3>Top Artists</h3>
+              <a class="button pill" href="explore.html">Explore</a>
+            </div>
+            <ul class="sidebar-list">
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-1"></span>
+                <div>
+                  <strong>Davido</strong>
+                  <span>1.2M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-2"></span>
+                <div>
+                  <strong>Wizkid</strong>
+                  <span>980K followers</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-1"></span>
+                <div>
+                  <strong>Davido</strong>
+                  <span>1.2M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-1"></span>
+                <div>
+                  <strong>Davido</strong>
+                  <span>1.2M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-1"></span>
+                <div>
+                  <strong>Davido</strong>
+                  <span>1.2M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-3"></span>
+                <div>
+                  <strong>Asake</strong>
+                  <span>840K streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-3"></span>
+                <div>
+                  <strong>Asake</strong>
+                  <span>840K streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-avatar" data-bg-image="artist-3"></span>
+                <div>
+                  <strong>Asake</strong>
+                  <span>840K streams</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <div class="sidebar-card-header">
+              <h3>Trending Albums</h3>
+              <a class="button pill secondary" href="javascript:void(0)">Browse Albums</a>
+            </div>
+            <ul class="sidebar-list sidebar-ranking">
+              <li>
+                <span class="sidebar-rank">#1</span>
+                <div>
+                  <strong>Sunset Sessions</strong>
+                  <span>1.8M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">#2</span>
+                <div>
+                  <strong>Urban Pulse</strong>
+                  <span>1.4M streams</span>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-rank">#3</span>
+                <div>
+                  <strong>Global Vibes</strong>
+                  <span>1.1M streams</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+
+     <section class="artist-filter-section">
+        <span class="section-label">Artists</span>
+        <h2>Browse the biggest Nigerian and gospel artists</h2>
+        <div class="artist-list">
+          <button type="button" class="button secondary small artist-link" data-artist="Davido">Davido</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Wizkid">Wizkid</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Burna Boy">Burna Boy</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Olamide">Olamide</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Tiwa Savage">Tiwa Savage</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Asake">Asake</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Seyi Vibez">Seyi Vibez</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Bella Shmurda">Bella Shmurda</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Portable">Portable</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Jeriq">Jeriq</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Fireboy DML">Fireboy DML</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Rema">Rema</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ayra Starr">Ayra Starr</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Patoranking">Patoranking</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Naira Marley">Naira Marley</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Zlatan">Zlatan</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Kizz Daniel">Kizz Daniel</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Joeboy">Joeboy</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Adekunle Gold">Adekunle Gold</button>
+          <button type="button" class="button secondary small artist-link" data-artist="BNXN">BNXN</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Victony">Victony</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mayorkun">Mayorkun</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Simi">Simi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Yemi Alade">Yemi Alade</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Teni">Teni</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Flavour">Flavour</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mr Eazi">Mr Eazi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Phyno">Phyno</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ice Prince">Ice Prince</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ycee">Ycee</button>
+          <button type="button" class="button secondary small artist-link" data-artist="CDQ">CDQ</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Peruzzi">Peruzzi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Blaqbonez">Blaqbonez</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Reekado Banks">Reekado Banks</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Spyro">Spyro</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Omah Lay">Omah Lay</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ruger">Ruger</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Johnny Drille">Johnny Drille</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Wande Coal">Wande Coal</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Niniola">Niniola</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Chike">Chike</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Timaya">Timaya</button>
+          <button type="button" class="button secondary small artist-link" data-artist="2Baba">2Baba</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Falz">Falz</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Kcee">Kcee</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Duncan Mighty">Duncan Mighty</button>
+          <button type="button" class="button secondary small artist-link" data-artist="D'banj">D'banj</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Praiz">Praiz</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Terry Apala">Terry Apala</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Mercy Chinwo">Mercy Chinwo</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Sinach">Sinach</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Nathaniel Bassey">Nathaniel Bassey</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Tim Godfrey">Tim Godfrey</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Ada Ehi">Ada Ehi</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Frank Edwards">Frank Edwards</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Eben">Eben</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Moses Bliss">Moses Bliss</button>
+          <button type="button" class="button secondary small artist-link" data-artist="Judikay">Judikay</button>
+        </div>
+        <div class="artist-filter-info">
+          <p>Click any artist name to discover related playlists, videos, and tracks throughout the site.</p>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-mark">MediaHub</span>
+              <div>
+                <p class="footer-brand-title">Your premium media destination</p>
+              </div>
+            </div>
+            <p class="footer-brand-copy">Discover music, movies, and culture with a modern streaming experience designed for discovery, playlists, and rapid access.</p>
+            <div class="footer-contact">
+              <a href="mailto:hello@downloaded.example.com">hello@downloaded.example.com</a>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+
+          <div class="footer-block">
+            <h3>Quick links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="mixtape.html">Mixtape</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Categories</h3>
+            <ul class="footer-list">
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="explore.html">Featured</a></li>
+              <li><a href="mixtape.html">Collections</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3>Social</h3>
+            <ul class="footer-list">
+              <li><a href="https://twitter.com/downloaded" target="_blank" rel="noopener">Twitter</a></li>
+              <li><a href="https://instagram.com/downloaded" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/@downloaded" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+
+          </div>
+
+        <div class="footer-bottom">
+          <p>Â© 2026 downloaded. All rights reserved.</p>
+          <div class="footer-policy-links">
+            <a href="javascript:void(0)">Privacy</a>
+            <a href="javascript:void(0)">Terms</a>
+            <a href="javascript:void(0)">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+        <script src="scripts.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
